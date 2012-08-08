@@ -431,7 +431,7 @@ def main():
             logger.info("No arguments given, using STDIN as input.")
             try:
                 while True:
-                    print(apply_filters(input()))
+                    print(apply_filters(raw_input()))
             except (EOFError, KeyboardInterrupt):
                 return 0
 
